@@ -25,6 +25,15 @@ public class Date {
 			return false;
 		}
 	}
+	
+	
+	public Date(int day,int month, int year, boolean holiday) {
+		this.day=day;
+		this.month=month;
+		this.year=year;
+		this.holiday=holiday;
+	}
+		
 	/**
 	 * Returns date
 	 */
@@ -33,6 +42,8 @@ public class Date {
 	}
 
     public static void main(String[] args) {
+    	Date one= new Date(25,12,2005,true);
+    	Date two= new Date(12,4,2022,false);
     	
     }
 
